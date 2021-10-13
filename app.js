@@ -14,7 +14,7 @@ const generateHTML = (pokemons) => {
 		accumulator +=
 			`
 		  <li class="card ${elementTypes[0]}">
-			<img class="card-image " src="${imgUrl(id)}">
+			<img class="card-image " src="${imgUrl(id)}" loading="lazy">
 			<h2>${id} ${name}</h2>
 			<p class="card-subtitle">${elementTypes.join(" | ")}</p>
 		  </li>
